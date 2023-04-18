@@ -1,0 +1,23 @@
+   0 mkdir -p /home/animals/dogs
+   1 mkdir -p /home/animals/cats
+   2 mkdir -p /home/animals/fish
+   3 touch /home/animals/dogs/pluto
+   4 touch /home/animals/cats/garfield
+   5 touch /home/animals/fish/nemo
+   6 touch /tmp/adam
+   7 mkdir /home/humans
+   8 cp /tmp/adam /home/humans/
+   9 touch /tmp/evA
+  10 mv /tmp/evA /opt/eve
+  11 mv /opt/eve /home/humans/
+  12 ls /home/humans
+  13 ls -R /home/animals
+  14 ls /tmp | grep -E 'adam|evA'
+  15 ls /home/humans > humans.txt
+  16 ls -R /home/animals > animals.txt
+  17 ls /tmp | grep -E 'adam|evA' > tmp.txt
+  18 cat humans.txt animals.txt tmp.txt > combined_output.txt
+  19 echo $HOME
+  20 mkdir /root/Downloads
+  21 mv combined_output.txt /root/Downloads/
+  22 history > combined_output.txt
